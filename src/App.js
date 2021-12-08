@@ -28,9 +28,9 @@ class App extends React.Component {
                 { title: 'Price', path: '/path' },
             ],
             home: {
-                title: "Steward's Insurance Co",
-                subTitle: 'Prices that are negotiable',
-                text: 'View Our Quotes',
+                title: "Intesa SanPaolo",
+                subTitle: 'Internet Banking',
+                text: 'Prodotti di Risparmio',
             },
             about: {
                 title: 'About Us',
@@ -39,7 +39,7 @@ class App extends React.Component {
                 title: 'Contact Information',
             },
             quote: {
-                title: 'Our Quotes',
+                title: 'Richiedi Carta',
             },
             price: {
                 title: 'Our Prices',
@@ -53,7 +53,7 @@ class App extends React.Component {
             <Router>
                 <Container className="p-0" fluid={true}>
                     <Navbar className="border-bottom" bg="primary" variant="dark" expand="lg">
-                        <Navbar.Brand>Steward's Insurance Co</Navbar.Brand>
+                        <Navbar.Brand>Intesa SanPaolo</Navbar.Brand>
                         <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
                         <Navbar.Collapse id="navbar-toggle">
                             <Nav className="ml-auto">
@@ -64,7 +64,7 @@ class App extends React.Component {
                                     About
                                 </Link>
                                 <Link className="nav-link" to="/quote">
-                                    Quote
+                                    Richiedi Carta
                                 </Link>
                                 <Link className="nav-link" to="/contact">
                                     Contact
