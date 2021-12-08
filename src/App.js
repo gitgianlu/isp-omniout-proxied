@@ -19,30 +19,30 @@ class App extends React.Component {
         super(props);
         this.state = {
             login: false,
-            title: 'Garrett Love',
+            title: 'Intesa SanPaolo',
             headerLinks: [
                 { title: 'Home', path: '/' },
                 { title: 'About', path: '/about' },
                 { title: 'Partners', path: '/partners' },
-                { title: 'Contact', path: '/contact' },
+                { title: 'Carte', path: '/contact' },
                 { title: 'Price', path: '/path' },
             ],
             home: {
-                title: "Steward's Insurance Co",
-                subTitle: 'Prices that are negotiable',
-                text: 'View Our Quotes',
+                title: "Intesa SanPaolo",
+                subTitle: 'Intesa SanPaolo - Internet Banking',
+                text: 'Richiedi Carta',
             },
             about: {
-                title: 'About Us',
+                title: 'Info',
             },
             contact: {
-                title: 'Contact Information',
+                title: 'Contatti',
             },
             quote: {
-                title: 'Our Quotes',
+                title: 'Carte',
             },
             price: {
-                title: 'Our Prices',
+                title: 'Costi',
                 subTitle: 'Affordable for All',
             },
         };
@@ -53,7 +53,7 @@ class App extends React.Component {
             <Router>
                 <Container className="p-0" fluid={true}>
                     <Navbar className="border-bottom" bg="primary" variant="dark" expand="lg">
-                        <Navbar.Brand>Steward's Insurance Co</Navbar.Brand>
+                        <Navbar.Brand>Intesa SanPaolo - Internet Banking</Navbar.Brand>
                         <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
                         <Navbar.Collapse id="navbar-toggle">
                             <Nav className="ml-auto">
@@ -61,16 +61,16 @@ class App extends React.Component {
                                     Home
                                 </Link>
                                 <Link className="nav-link" to="/about">
-                                    About
+                                    Info
                                 </Link>
                                 <Link className="nav-link" to="/quote">
-                                    Quote
+                                    Carte
                                 </Link>
                                 <Link className="nav-link" to="/contact">
-                                    Contact
+                                    Contatti
                                 </Link>
                                 <Link className="nav-link" to="/price">
-                                    Price
+                                    Costi
                                 </Link>
                             </Nav>
                         </Navbar.Collapse>
