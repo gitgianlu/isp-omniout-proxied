@@ -7,8 +7,8 @@ class ExpressConnectionExample {
     /**
      * The URL from your express proxy application.
      */
-    _proxyUrl = 'http://localhost:3001/api';
-    // _proxyUrl = 'https://isp-omniout-proxy.herokuapp.com/api';
+    //_proxyUrl = 'http://localhost:3001/api';
+    _proxyUrl = 'https://isp-omniout-proxy.herokuapp.com/api';
 
     /**
      * The instance URL of your Salesforce Org
