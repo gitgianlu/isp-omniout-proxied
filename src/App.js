@@ -30,7 +30,7 @@ class App extends React.Component {
             home: {
                 title: "Intesa SanPaolo",
                 subTitle: 'Internet Banking',
-                text: 'Prodotti di Risparmio',
+                text: 'Richiedi Carta',
             },
             about: {
                 title: 'About Us',
