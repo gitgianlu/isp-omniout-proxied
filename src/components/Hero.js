@@ -11,18 +11,27 @@ import Insurance from '../resources/insurance.jpg';
 function Hero(props) {
     return (
         <div>
-            <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+            <div>
+            <img class="hide-mobile image-cards" src='./intesa/MainCarte_hero_con_testo.jpeg'></img>
+            <img class="hide-desktop image-cards" src='./intesa/carte-mobile.png'></img>
+            </div>
+            {/* <Jumbotron className="bg-transparent jumbotron-fluid p-0">
                 <Container fluid={true}>
                     <Row className="justify-content-center py-5">
-                        <Col md={7} sm={12}>
-                            {props.title && <h1 className="display-4 font-weight-bolder">{props.title}</h1>}
-                            {props.subTitle && <h2 className="display-6 font-weight-light">{props.subTitle}</h2>}
-                            {props.text && (
+                        <Col md={7} sm={12}> */}
+                            {/* {props.title && <h1 className="display-4 font-weight-bolder">{props.title}</h1>}
+                            {props.subTitle && <h2 className="display-6 font-weight-light">{props.subTitle}</h2>} */}
+                            {
+                            // props.text &&
+                            (
                                 <Link to="/quote">
-                                    <button class="btn btn-primary btn-lg">{props.text}</button>
+                                    <div class="richiedi-carta-div">
+                                        <button class="btn btn-primary btn-lg">{props.text}</button>
+                                    </div>
                                 </Link>
-                            )}
-                        </Col>
+                            )
+                            }
+                        {/* </Col>
                         <Col md={9} sm={12}>
                             <br></br>
                             {props.title === "Steward's Insurance Co" && (
@@ -46,7 +55,7 @@ function Hero(props) {
                         </Col>
                     </Row>
                 </Container>
-            </Jumbotron>
+            </Jumbotron> */}
         </div>
     );
 }

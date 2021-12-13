@@ -25,10 +25,175 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Vlocity OmniOut LWC Sample - Express Proxy</title>
+
+    <style>
+      .header-intesa {
+        height: 70px;
+        background-color: #258900;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: calc(100vw - ((100vw - 1045.33px) / 2));
+        color: white;
+        font-size: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      .logo-intesa {
+        width: 222.5px;
+        margin: 0 10px;
+      }
+      .parla-con-noi-div {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .parla-con-noi {
+        height: 30px;
+        margin-bottom: 5px;
+      }
+      .ricerca-div {
+        margin: 0 10px;
+      }
+      .ricerca {
+        width: 400px;
+        height: 48px;
+        font-size: 20px;
+      }
+      .icona-lente {
+        position: relative;
+        right: 50px;
+        bottom: 5px;
+        height: 25px;
+      }
+      .header-right-element {
+        width: 80px;
+        height: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+      }
+      .esci-div {
+        background-color: #323232;
+        height: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+      }
+
+      .image-cards {
+        width: 100%;
+      }
+
+      .richiedi-carta-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      }
+
+      .catalogo-carte {
+        height: 60px;
+        border-top: 1px solid #3232;
+        border-bottom: 1px solid #3232;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .catalogo-carte-sopratitolo {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #323232;
+        margin-left: 45px;
+      }
+
+      .catalogo-carte-back-titolo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px;
+      }
+
+      .home-btn {
+        color: #258900;
+      }
+
+      @media (max-width: 424px) {
+        .logo-intesa {
+          width: 140px;
+        }
+        .hide-mobile {
+          display: none;
+        }
+        .header-right-element {
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+        }
+        .catalogo-carte-back-titolo {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 424px) {
+        .hide-desktop {
+          display: none;
+        }
+      }
+    </style>
+
   </head>
 
-  <body style="background-color: white">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div style="background-image: linear-gradient(to right, white , rgba(29, 29, 0, 0.212));">
+      <div class="header-intesa">
+        <div><img src="./intesa/head_01025_logo.png" class="logo-intesa"></div>
+        <div class="parla-con-noi-div hide-mobile">
+          <div><img src="./intesa/parlaconnoi_icon.png" class="parla-con-noi"></div>
+          <div>Parla con noi</div>
+        </div>
+        <div class="ricerca-div">
+          <input type="text" class="ricerca hide-mobile" placeholder="   Cerca nel sito">
+          <img src="./intesa/icon_cerca_grey.png" class="icona-lente hide-mobile">
+        </div>
+        <div class="header-right-element">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div>
+              <div style="border-top: 2px solid white; width: 15px; margin-bottom: 3px; margin-left: 2px"></div>
+              <div style="border-top: 2px solid white; width: 15px; margin-right: 2px;"></div>
+              <div style="border-top: 2px solid white; width: 15px; margin-top: 3px; margin-left: 2px"></div>
+            </div>
+            <div>
+              <span style="font-size: 25px; font-weight: normal; border: 2px solid white; border-radius: 50%; padding: 0 6px;">&euro;</span>
+            </div>
+          </div>
+          <div class="hide-mobile">Operazioni</div>
+        </div>
+        <div class="header-right-element">
+          <div style="border-top: 2px solid white; width: 30px; margin-bottom: 7px; margin-top: 7px;"></div>
+          <div style="border-top: 2px solid white; width: 30px; margin-bottom: 7px;"></div>
+          <div style="border-top: 2px solid white; width: 30px; margin-bottom: 9px;"></div>
+          <div class="hide-mobile">Menu</div>
+        </div>
+        <div class="header-right-element esci-div">
+          <div><img src="./intesa/imageedit_1_9018684686.png" style="height: 30px; margin-bottom: 5px;"></div>
+          <div class="hide-mobile">Esci</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalogo-carte">
+      <div class="catalogo-carte-sopratitolo">CARTE</div>
+      <div class="catalogo-carte-back-titolo">
+        <div><img src="./intesa/sliderSx.png" style="height: 15px; margin: 0 10px;"> <span class="home-btn hide-mobile">Home</span></div>
+        <div><b style="font-size: 18px;">CATALOGO CARTE</b></div>
+        <div>&nbsp;</div>
+      </div>
+    </div>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

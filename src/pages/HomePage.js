@@ -13,7 +13,7 @@ function HomePage(props) {
         <div>
             <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
 
-            <Content>
+            {/* <Content>
                 <div class="container">
                     <div class="row">
                         <Card bg="info" style={{ width: '20rem' }}>
@@ -48,7 +48,7 @@ function HomePage(props) {
                         </div>
                     </div>
                 </div>
-            </Content>
+            </Content> */}
         </div>
     );
 }

@@ -52,7 +52,7 @@ class App extends React.Component {
         return (
             <Router>
                 <Container className="p-0" fluid={true}>
-                    <Navbar className="border-bottom" bg="primary" variant="dark" expand="lg">
+                    {/* <Navbar className="border-bottom" bg="primary" variant="dark" expand="lg">
                         <Navbar.Brand>Intesa SanPaolo - Internet Banking</Navbar.Brand>
                         <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
                         <Navbar.Collapse id="navbar-toggle">
@@ -74,7 +74,7 @@ class App extends React.Component {
                                 </Link>
                             </Nav>
                         </Navbar.Collapse>
-                    </Navbar>
+                    </Navbar> */}
                     <Route
                         path="/home"
                         render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />}
@@ -92,7 +92,7 @@ class App extends React.Component {
                         path="/vlocityomniscript/offplatformLifeInsuranceExample2English"
                         render={() => <QuotePage title={this.state.quote.title} />}
                     />
-                    <Footer />
+                    {/* <Footer /> */}
                 </Container>
             </Router>
         );
